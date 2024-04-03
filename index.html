@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="music-player">
+            <div class="music-title">
+                <h5>Now playing</h5>
+                <h3 class="song-title"></h3>
+            </div>
+            <div class="music-cover">
+                <img src="thumbnails/Evarevaro.jpg" alt="" class="album-cover">
+            </div>
+            <audio src="" id="song" min="0" step="1"></audio>
+            <div class="music-controls">
+                <div class="music-reload">
+                    <i class="fa-solid fa-rotate-right" id="reload"></i>
+                </div>
+                <div class="music-backward">
+                    <i class="fa-solid fa-backward" id="prev"></i>
+                </div>
+                <div class="music-play active">
+                    <i class="fa-solid fa-play" id="play"></i>
+                </div>
+                <div class="music-forward">
+                    <i class="fa-solid fa-forward" id="next"></i>
+                </div>
+                <div class="music-shuffle">
+                    <i class="fa-solid fa-shuffle" id="shuffle"></i>
+                </div>
+            </div>
+            <input type="range" class="progress">
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
